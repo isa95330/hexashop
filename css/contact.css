@@ -1,0 +1,96 @@
+#map {
+    width: 100%;
+    height: 150px;
+    min-height: 100%;
+}
+
+/* MOBILE */
+
+h2 {
+    margin-top: 2rem;
+}
+
+.form-name input, .form-email input {
+    min-width: 100%;
+    height: 4rem;
+}
+
+textarea {
+    min-width: 100%;
+}
+
+button {
+    margin-top: 2rem; 
+}
+
+footer {
+    margin-top: 2rem;
+}
+
+.contact3 {
+    margin-top: 1rem;
+}
+
+/* TABLETTE */
+@media screen and (min-width: 768px) {
+.contact2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* background-color: blue; */
+    gap: 2rem;
+    padding: 1rem;
+}
+
+/* .contact2 > * {
+    background-color: aqua;
+} */
+
+#map {
+    width: 100%;
+    height: 300px;
+}
+
+#form-contact {
+    display: flex;
+    justify-content: space-between;
+    /* border: solid black 1px; */
+    /* gap: 2rem; */
+    flex-wrap: wrap;
+}
+
+.form-name, .form-email {
+    width: calc(100% / 1);
+    margin: 0;
+}
+textarea {
+    margin-top: 2rem;
+}
+}
+
+
+
+/* DESKTOP */
+
+@media screen and (min-width: 1200px) {
+.contact2 {
+    /* background-color: brown; */
+    grid-template-columns: 2fr 1fr;
+}
+#map {
+    height: 450px;
+}
+
+#form-contact {
+    display: flex;
+    justify-content: space-between;
+    /* border: solid black 1px; */
+    /* gap: 2rem; */
+    flex-wrap: wrap;
+}
+
+.form-name, .form-email {
+    width: calc(100% / 2 - 1rem);
+    margin-bottom: 2rem;
+}
+
+}
